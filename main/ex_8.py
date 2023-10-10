@@ -117,7 +117,7 @@ def interface():
     # ESCOLHA DO TIPO DE TECNICA
     op = input("Escolha o tipo de técnica: \n 1-IMC \n 2-Integral de erro\n")
     if op == "1":
-        lambida = input("Lambida: ")
+        lambida = Theta*0.8
         imc(K, T, Theta, float(lambida))
     elif op == "2":
         int_erro(K, T, Theta)
