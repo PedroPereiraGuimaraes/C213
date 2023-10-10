@@ -1,4 +1,3 @@
-# C213
 ## Repositório para o trabalho de Controle Clássico
 
 ### Autores
