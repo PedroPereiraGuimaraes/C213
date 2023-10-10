@@ -12,9 +12,6 @@ kp = (1/((Theta/tau)+0.2)/k)
 Ti = (((0.3*(Theta/tau)) + 1.2)/((Theta/tau)+0.08))*Theta
 Td = (1/(90*(Theta/tau))) * Theta
 
-print(kp)
-print(Ti)
-print(Td)
 
 # FUNC TRANF PLANTA
 num = np. array([k])
