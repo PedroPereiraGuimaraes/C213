@@ -3,14 +3,15 @@ import control as cnt
 import matplotlib.pyplot as plt
 
 # VARIAVEIS
-k = 1.993
+k = 0.5
 tau = 4.972
 Theta = 0.998
+lambida = 0.7984
 
 # PARAMETROS CONTROLADOR
-kp = (1/((Theta/tau)+0.2)/k)
-Ti = (((0.3*(Theta/tau)) + 1.2)/((Theta/tau)+0.08))*Theta
-Td = (1/(90*(Theta/tau))) * Theta
+kp = (((2*tau) + Theta)/(k*(2*lambida)+Theta))
+Ti = (tau+(Theta/2))
+Td = ((tau*Theta)/((2*tau)+Theta))
 
 
 # FUNC TRANF PLANTA
@@ -44,7 +45,6 @@ Hdel = cnt.series(Hs, Hctrl)
 
 # REALIMENTACAO
 Hcl = cnt.feedback(Hdel, 1)
-
 
 t = np . linspace(0, 40, 100)
 (t, y) = cnt.step_response(12 * Hcl, t)

@@ -3,6 +3,7 @@ import control as cnt
 import matplotlib.pyplot as plt
 from scipy.io import loadmat
 
+# IMPORTANDO DADOS
 mat = loadmat('./TransferFunction12.mat')
 
 # VARIAVEIS
