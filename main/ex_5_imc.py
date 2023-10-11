@@ -13,6 +13,7 @@ kp = (((2*tau) + Theta)/(k*(2*lambida)+Theta))
 Ti = (tau+(Theta/2))
 Td = ((tau*Theta)/((2*tau)+Theta))
 
+print(kp, Ti, Td)
 
 # FUNC TRANF PLANTA
 num = np. array([k])
