@@ -23,7 +23,7 @@ O objetico do trabalho é aplicar conceitos vistos em um projeto de uma planta d
 ### Autores 💻
 ```
 Pedro Pereira Guimarães - GEC - 1666
-Nathan Santos Ataliba - ### - ####
+Nathan Santos Ataliba - GEC- 1663
 ```
 
 
