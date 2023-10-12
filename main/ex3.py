@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from scipy.io import loadmat
 
 # IMPORTANDO DADOS
-mat = loadmat('./TransferFunction12.mat')
+mat = loadmat('../TransferFunction12.mat')
 
 # VARIAVEIS
 k = 1.993
@@ -26,9 +26,6 @@ t = np.linspace(0, 30, 1000)
 
 # RESPOSTA EM DEGRAU
 time, y = cnt.step_response(12*Hs, T=t)
-
-# ERRO EM MALHA ABERTA -> 12-24 = -12
-# ERRO EM MALHA FECHADA -> 12-8 = 4
 
 plt.plot(time, y)
 plt.xlabel('Tempo')
