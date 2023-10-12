@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # IMPORTANDO DADOS
-mat = loadmat('./TransferFunction12.mat')
+mat = loadmat('../TransferFunction12.mat')
 
 # VARIAVEIS
 # Du = 12
